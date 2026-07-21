@@ -3,42 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modern Interactive Web Page</title>
+  <title>My Personal AI Chatbot</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="logo">My<span>Website</span></div>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero Section -->
-  <header id="home" class="hero">
-    <h1>Welcome to My Digital Space</h1>
-    <p>Built with HTML, CSS, and JS — Ready for GitHub Deployment!</p>
-    <button id="cta-btn" onclick="showMessage()">Click Me</button>
-  </header>
-
-  <!-- Interactive Counter Section -->
-  <section id="about" class="interactive-section">
-    <h2>Interactive Counter</h2>
-    <div class="counter-box">
-      <button onclick="decrement()">-</button>
-      <span id="counter">0</span>
-      <button onclick="increment()">+</button>
+  <div class="chat-container">
+    <div class="chat-header">
+      <h2>🤖 My AI Assistant</h2>
+      <p>Ask me anything!</p>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer id="contact">
-    <p>&copy; 2026 Designed and Hosted on GitHub Pages</p>
-  </footer>
+    <div class="chat-box" id="chat-box">
+      <div class="message ai-message">
+        হ্যালো! আমি আপনার AI অ্যাসিস্ট্যান্ট। আমাকে যেকোনো প্রশ্ন করতে পারেন!
+      </div>
+    </div>
+
+    <div class="input-area">
+      <input type="text" id="user-input" placeholder="আপনার প্রশ্নটি লিখুন..." onkeypress="handleKeyPress(event)">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
