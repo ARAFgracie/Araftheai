@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ArafTheAI Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.menu{
+width:90%;
+max-width:500px;
+}
+
+.card{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,.15);
+padding:30px;
+border-radius:20px;
+margin:20px 0;
+cursor:pointer;
+transition:.3s;
+color:white;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 0 25px #00d9ff;
+}
+
+h2{
+margin-bottom:10px;
+}
+
+p{
+opacity:.8;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="menu">
+
+<div class="card" onclick="location.href='ask.html'">
+<h2>🤖 Ask To Do</h2>
+<p>Ask ArafTheAI anything.</p>
+</div>
+
+<div class="card" onclick="location.href='teach.html'">
+<h2>📚 Teach AI</h2>
+<p>Upload text, PDF or images to teach the AI.</p>
+</div>
+
+</div>
+
+</body>
+</html>
